@@ -1,0 +1,14 @@
+.box{
+    margin: 50px;
+    width: 200px;
+    height: 100px;
+    align-content: center;
+}
+
+.column{
+    background-color: lightcyan;
+}
+
+.columna1{
+    background-color: whitesmoke;
+}

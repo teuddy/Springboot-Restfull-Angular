@@ -1,8 +1,13 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!!!
-    <app-teacher-list></app-teacher-list>
-  </h1>
-  
+<div class="container is-fullhd is-gradient">
+  <div class="notification">
+    <p class="title is-3 is-spaced">Jarvis School</p>
+  </div>
 </div>
+<nav>
+    <a routerLink="/teachers">teachers</a>
+    <a routerLink="/courses">courses</a>
+  </nav>
+
+
+<router-outlet></router-outlet>
+<!-- Routed views go here-->

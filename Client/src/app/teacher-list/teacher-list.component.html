@@ -1,9 +1,4 @@
-<h2>Teacher List</h2>
-
-<div *ngFor="let teacher of teachers">
- 
- <h1>Usuario</h1><h2> {{teacher.Username}}</h2> 
- <h1>Contrasena</h1><h2> {{teacher.Password}}</h2> 
-
- 
-</div>
+<h1 *ngFor="let teacher of teachers">
+  {{teacher.Username}}
+  {{teacher.courses.Name}}
+</h1>

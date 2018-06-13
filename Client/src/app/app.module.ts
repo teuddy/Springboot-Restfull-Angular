@@ -3,18 +3,30 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { TeacherService } from './shared/teacher/teacher.service';
-import { TeacherListComponent } from './teacher-list/teacher-list.component';
+import { FormsModule } from '@angular/forms';
+import { EmployeeService } from './employee.service';
+import { AppRoutingngMOdule, routingComponents } from './app-routing.module';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    TeacherListComponent
+      routingComponents,
+      PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,//MODULO ENCQRGADO DE HACER LLAMADAS HTTP ETC BLABLA
+    FormsModule,
+    AppRoutingngMOdule
+
   ],
-  providers: [TeacherService],
+  providers: [
+    TeacherService,
+    EmployeeService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
